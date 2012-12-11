@@ -1,0 +1,26 @@
+<head>
+<style type="text/css">
+.style1 {
+    text-align: center;
+}
+</style>
+
+</head>
+<hr>
+<body style="color: #FFFFFF; background-color: #F3F3F3">
+
+<div class="style1">
+    <IMG src="file:///home/hasimir/lang/opt/observer_plot.png" border="1" name="refresh"> 
+    <SCRIPT language="JavaScript" type="text/javascript"> 
+        var t = 1 // Interval in Seconds
+        image = "file:///home/hasimir/lang/opt/observer_plot.png" //URL of the Image 
+        function Start()
+        { 
+            tmp = new Date(); 
+            tmp = "?"+tmp.getTime() 
+            document.images["refresh"].src = image+tmp 
+            setTimeout("Start()", t*1000) 
+        } 
+        Start(); 
+    </SCRIPT>
+</div>
